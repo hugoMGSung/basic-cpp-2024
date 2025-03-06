@@ -6,6 +6,8 @@ IoT 개발자 심화 프로그래밍 언어 학습리포지토리
 	- Visual Studio 2022 Community 설치
 	- C, C++ 소스코드 실행
 
+- 열혈강의 Chap01
+
 ## 2일차
 
 ## 3일차
