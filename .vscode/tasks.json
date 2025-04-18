@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			// "type" : 작업 유형으로 "shell", "process", "cppbuild" 등 지정된 작업유형을 설정
+			"type": "cppbuild",
+			// "label" : 해당 작업의 이름을 임의로 지정 가능
+			"label": "C/C++: gcc.exe 활성 파일 빌드",
+			// "command" : 빌드 명령어를 작성
+			"command": "C:/DEV/LANGs/msys64/ucrt64/bin/gcc.exe",
+			// "args" : command에 옵션으로 사용될 인자
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:/DEV/LANGs/msys64/ucrt64/bin"
+			},
+			//  "problemMatcher" : 사용자 인터페이스에서 작업 출력이 처리되는 방식을 정의
+			"problemMatcher": [
+				"$gcc"
+			],
+			// "group" :해당 task의 그룹을 지정
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			// "detail" : >tasks : run task를 했을 때 설명으로 보일 내용
+			"detail": "컴파일러: C:/DEV/LANGs/msys64/ucrt64/bin/gcc.exe"
+		}
+	]
+}
